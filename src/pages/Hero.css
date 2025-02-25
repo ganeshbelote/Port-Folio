@@ -1,0 +1,36 @@
+.social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icons i:hover {
+    transform: scale(1.2); /* Scale effect */
+  }
+  
+  .fa-linkedin:hover {
+    color: #0077b5; /* LinkedIn Blue */
+  }
+  
+  .fa-envelope:hover {
+    color: red; /* Email Red */
+  }
+  
+  .fa-square-instagram:hover {
+    color: #e4405f; /* Instagram Pink */
+  }
+  
+  .fa-github:hover {
+    color: black; /* GitHub Black */
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    display: inline-block; /* Makes the <i> inside clickable */
+  }
+  
+  .social-icons i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer; /* Ensures cursor changes on hover */
+  }
+  
+  
