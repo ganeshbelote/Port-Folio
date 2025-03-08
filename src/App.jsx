@@ -5,6 +5,8 @@ import MyWork from './pages/MyWork'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import {SmoothScroll} from './utils/SmoothScroll.jsx'
+import Navbar from './components/Navbar.jsx'
+
 
 
 function App () {
@@ -12,6 +14,7 @@ function App () {
   return (
     // <SmoothScroll>
     <>
+      <Navbar />
       <Hero />
       <Skills />
       <MyWork />

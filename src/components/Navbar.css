@@ -1,0 +1,22 @@
+@media (max-width : 545px){
+    .wrapper{
+        .navbar{
+            display: none;
+        }
+        .navBtn{
+            display: flex;
+        }
+    }
+}
+
+@media (max-width : 900px) and (min-width : 545px){
+    .wrapper{
+        height: 8vh;
+    }
+}
+
+@media (max-height : 1370px) and (min-height : 700px){
+    .wrapper{
+        height: 7vh;
+    }
+}

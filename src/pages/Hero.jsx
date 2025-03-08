@@ -39,9 +39,6 @@ const Hero = () => {
   const profilePos = '20vw'
   return (
     <div id='Home' style={{ padding: '10px 0 3vh' }}>
-      <div className='w-full h-22 flex justify-center'>
-        <Navbar />
-      </div>
       <div className='main h-[90vh] w-[100vw] flex items-center justify-center'>
         <Page measures={measures} />
         <img
