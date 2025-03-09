@@ -1,34 +1,67 @@
-.social-icons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .social-icons i:hover {
-    transform: scale(1.2); /* Scale effect */
-  }
-  
-  .fa-linkedin:hover {
-    color: #0077b5; /* LinkedIn Blue */
-  }
-  
-  .fa-envelope:hover {
-    color: red; /* Email Red */
-  }
-  
-  .fa-square-instagram:hover {
-    color: #e4405f; /* Instagram Pink */
-  }
-  
-  .fa-github:hover {
-    color: black; /* GitHub Black */
-  }
 
-  .social-icons a {
-    text-decoration: none;
-    display: inline-block; /* Makes the <i> inside clickable */
+@media (max-width: 431px) {
+  .profile-container{
+    flex-direction: column;
+    gap: 35px;
+    .text,.profile{
+      height: 40%;
+      width: 90%;
+    }
+    .text{
+      padding: 35px;
+      gap: 18px;
+      h2{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: 1.2rem;
+      }
+      .social-icons{
+        gap: 25px;
+      }
+    }
+    .profile{
+      img{
+        height: 130%;
+      }
+    }
   }
-  
-  .social-icons i {
-    transition: transform 0.3s ease, color 0.3s ease;
-    cursor: pointer; /* Ensures cursor changes on hover */
+}
+
+@media (max-width: 276px){
+  .text{
+    padding: 0 15px;
   }
+}
+
+@media (max-width: 770px) and (min-width: 430px){
+  .text{
+    /* background-color: red; */
+    height: 55%;
+    gap: 25px;
+    h2{
+      font-size: 2.5rem;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+    .social-icons{
+      gap: 25px;
+    }
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 770px){
+  .text{
+    /* background-color: red; */
+    height: 75%;
+    gap: 25px;
+    h2{
+      font-size: 2.8rem;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    
+  }
+}

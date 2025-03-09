@@ -44,7 +44,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`wrapper w-screen h-[10.5vh] flex items-center justify-center relative ${showBorder?'border-b-2  border-black':''}`}>
+    <div className={`wrapper bg-[#11111189] w-screen h-[10.5vh] flex items-center justify-center relative ${showBorder?'border-b-2  border-black':''}`}>
       <div
         ref={navRef}
         className={`navbar z-50 h-[inherit] w-[70%] rounded-md fixed bg-[#E3E6D6] border-2 border-black flex items-center justify-evenly transition-all duration-300 ${
@@ -55,7 +55,7 @@ const Navbar = () => {
           <div
             className='text-xl font-semibold bg-[#FEFFF0] border-2 rounded-l-lg hover:scale-105 cursor-pointer'
             style={{
-              padding: `${padHeight}px 1vw`
+              padding: `${padHeight - 3}px 1vw`
             }}
           >
             Home
@@ -66,7 +66,7 @@ const Navbar = () => {
           <div
             className='text-xl font-semibold bg-[#FEFFF0] border-2 hover:scale-105 cursor-pointer'
             style={{
-              padding: `${padHeight}px 1vw`
+              padding: `${padHeight - 3}px 1vw`
             }}
           >
             Skills
@@ -77,7 +77,7 @@ const Navbar = () => {
           <div
             className='text-xl font-semibold bg-[#FEFFF0] border-2 hover:scale-105 cursor-pointer'
             style={{
-              padding: `${padHeight}px 1vw`
+              padding: `${padHeight - 3}px 1vw`
             }}
           >
             My Work
@@ -88,7 +88,7 @@ const Navbar = () => {
           <div
             className='text-xl font-semibold bg-[#FEFFF0] border-2 hover:scale-105 cursor-pointer'
             style={{
-              padding: `${padHeight}px 1vw`
+              padding: `${padHeight - 3}px 1vw`
             }}
           >
             About
@@ -99,7 +99,7 @@ const Navbar = () => {
           <div
             className='text-xl font-semibold bg-[#FEFFF0] border-2 rounded-r-lg hover:scale-105 cursor-pointer'
             style={{
-              padding: `${padHeight}px 1vw`
+              padding: `${padHeight - 3}px 1vw`
             }}
           >
             Contact

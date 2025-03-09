@@ -8,7 +8,16 @@
         }
     }
 }
-
+@media (max-width: 770px){
+    .wrapper{
+        .navbar{
+            display: none;
+        }
+        .navBtn{
+            display: flex;
+        }
+    }
+}
 @media (max-width : 900px) and (min-width : 545px){
     .wrapper{
         height: 8vh;
