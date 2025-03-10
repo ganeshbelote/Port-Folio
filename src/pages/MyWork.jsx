@@ -1,99 +1,84 @@
 import React from 'react'
-import Title from '../components/Title'
-import Card from '../components/Card.jsx'
 import star from '../assets/star.svg'
-import portfoliaImg from '../assets/portfolio.png'
-import lmsImg from '../assets/lms.png'
-import Rivian from '../assets/Rivian.png'
-import Todo from '../assets/todoappfront.png'
-
+import work from '../assets/work.svg'
+import sun from '../assets/sun.svg'
+import portfolio from '../assets/portWork.svg'
+import Rivian from '../assets/Rivian.svg'
+import Todo from '../assets/Todo.svg'
+import lmsImg from '../assets/lms.svg'
+import './MyWork.css'
 
 const MyWork = () => {
   return (
     <div
       id='MyWork'
-      className='work w-screen flex flex-col items-center justify-center relative rounded-[45px]'
-      style={{ paddingTop: '2vh', borderTop:"2px solid black" }}
+      className='work h-screen w-screen flex flex-col items-center justify-start relative rounded-t-[45px] overflow-hidden'
+      style={{ paddingTop: '2vh', borderTop: '2px solid black' }}
     >
-      <img
-        className='absolute h-48 z-30 bottom-5 right-20'
-        src={star}
-        alt='star'
-      />
-      <img
-        className='absolute h-48 z-10 top-20 -left-12'
-        src={star}
-        alt='star'
-      />
-      <div className='h-[28vh] w-full flex items-center justify-center relative'>
-        <Title title={'My Works'} />
-        <div className='absolute bottom-0 w-[60%] h-[2px] bg-black flex items-center justify-between'>
-          <div className='leftCircle h-1.5 w-1.5 rounded-full bg-black'></div>
-          <div className='rightCircle h-1.5 w-1.5 rounded-full bg-black'></div>
+      <div
+        className='up h-1/5 w-full flex items-center justify-center relative before:content-[""] before:absolute before:bottom-0 before:h-[3.5px] before:w-[70%] before:bg-black before:rounded-4xl'
+        style={{ paddingBottom: '3vh' }}
+      >
+        <div className='img h-full flex relative '>
+          <img
+            className='h-[90%] lg:h-[120%] lg:-translate-y-2 md:h-full'
+            src={work}
+            alt='point'
+          />
+          <img
+            className='h-[90%] absolute -right-1/3 -bottom-1/3'
+            src={sun}
+            alt='sun'
+          />
         </div>
       </div>
-      <div
-        className='down  w-full flex items-center justify-center gap-5 flex-wrap'
-        style={{
-          padding: '10vh 10vw'
-        }}>
-        <Card>
+      <div className='down h-3/5 lg:h-4/5 w-full flex items-center justify-center'>
+        <div
+          className='container h-full lg:h-[80%] w-full flex items-center justify-center gap-3'
+          style={{ padding: '0 30px' }}
+        >
           <div
-            className='h-full w-full flex flex-col gap-2 items-center justify-between'
-            style={{ padding: '10% 10%' }}
+            className='Set w-full h-2/3 lg:h-full lg:w-1/2 flex items-center justify-center gap-5'
+            style={{ padding: '0 15px' }}
           >
-            <div className='img h-[50%] w-[90%] overflow-hidden border-2 border-black rounded-2xl bg-amber-300'>
-              <img className='h-full' src={lmsImg} alt='LMS' />
-            </div>
-            <h2 className='text-2xl font-bold'>LMS Website</h2>
-            <p className='text-[17px] text-zinc-600 font-semibold text-center'>
-            Created an LMS with authentication, course management using React, Node.js, Express, MongoDB.
-            </p>
+            <img
+              className='w-1/2 lg:h-[85%] cursor-pointer hover:scale-101'
+              src={portfolio}
+              alt='portfolio'
+            />
+            <img
+              className='w-1/2 lg:h-[85%] cursor-pointer hover:scale-101'
+              src={Rivian}
+              alt='Rivian'
+            />
           </div>
-        </Card>
-        <Card>
           <div
-            className='h-full w-full flex flex-col gap-2 items-center justify-between'
-            style={{ padding: '10% 10%' }}
+            className='Set w-full h-2/3 lg:h-full lg:w-1/2 flex items-center justify-center gap-5'
+            style={{ padding: '0 15px' }}
           >
-            <div className='img h-[50%] w-[90%] border-2 overflow-hidden border-black rounded-2xl bg-amber-300'>
-              <img className='h-full' src={portfoliaImg} alt='Portfolio' />
-            </div>
-            <h2 className='text-2xl font-bold'>Portfolio</h2>
-            <p className='text-[17px] text-zinc-600 font-semibold text-center'>
-            Created a portfolio using React, showcasing projects, skills, and experience with a responsive design.
-            </p>
+            <img
+              className='w-1/2 lg:h-[85%] cursor-pointer hover:scale-101'
+              src={Todo}
+              alt='Todo'
+            />
+            <img
+              className='w-1/2 lg:h-[85%] cursor-pointer hover:scale-101'
+              src={lmsImg}
+              alt='lmsImg'
+            />
           </div>
-        </Card>
-        <Card>
-          <div
-            className='h-full w-full flex flex-col gap-2 items-center justify-between'
-            style={{ padding: '10% 10%' }}
-          >
-            <div className='img h-[50%] w-[90%] border-2 overflow-hidden border-black rounded-2xl bg-black'>
-              <img className='h-full object-center' src={Rivian} alt='Portfolio' />
-            </div>
-            <h2 className='text-2xl font-bold'>Rivian Design</h2>
-            <p className='text-[17px] text-zinc-600 font-semibold text-center'>
-            Recreating the modern Rivian Car Website using React, Tailwind CSS, and GSAP for smooth animations.
-            </p>
-          </div>
-        </Card>
-        <Card>
-          <div
-            className='h-full w-full flex flex-col gap-2 items-center justify-between'
-            style={{ padding: '10% 10%' }}
-          >
-            <div className='img h-[50%] w-[90%] border-2 overflow-hidden border-black rounded-2xl bg-black '>
-              <img className='h-full object-cover object-center' src={Todo} alt='Portfolio' />
-            </div>
-            <h2 className='text-2xl font-bold'>TODO WepApp</h2>
-            <p className='text-[17px] text-zinc-600 font-semibold text-center'>
-            Building a Full-Stack To-Do Web App with React, Tailwind CSS, Node.js, Express.js, and MongoDB.
-            </p>
-          </div>
-        </Card>
+        </div>
       </div>
+      <img
+        className='absolute h-[15vh] lg:h-[10vw] top-20 -left-12'
+        src={star}
+        alt='star'
+      />
+      <img
+        className='absolute h-[15vh] lg:h-[10vw] bottom-16 lg:bottom-0 -right-10'
+        src={star}
+        alt='star'
+      />
     </div>
   )
 }

@@ -1,0 +1,31 @@
+@media (max-width : 541px){
+    #MyWork{
+        margin-bottom: -115px;
+    }
+    .up{
+        height: 20vh;
+    }
+    .down {
+        .container{
+            justify-content: start;
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+}
+
+@media (max-width:821px) and (min-width:541px){
+    .down {
+        .container{
+            justify-content: start;
+            flex-direction: column;
+            gap: 15px;
+            .Set{
+                margin-top: 30px;
+            }
+            img{
+                width: 40%;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@media (max-width:541px){
+    .main {
+        gap: 10px;
+        .bg{
+            display: none;
+        }
+        .left,.right{
+            p{
+                gap: 0;
+                font-size: 0.8rem;
+                span{
+                font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:771px) and (min-width:541px){
+    .main {
+        gap: 10px;
+        .bg{
+            display: none;
+        }
+        .left,.right{
+            p{
+                gap: 0;
+                font-size: 0.8rem;
+                span{
+                font-size: 1rem;
+                }
+            }
+        }
+    }
+}

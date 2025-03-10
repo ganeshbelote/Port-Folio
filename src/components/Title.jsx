@@ -1,5 +1,5 @@
 import React from 'react'
-import son from '../assets/son.svg'
+import son from '../assets/sun.svg'
 
 const Title = ({title}) => {
   return (
