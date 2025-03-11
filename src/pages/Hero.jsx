@@ -177,7 +177,7 @@ const Hero = () => {
               >
                 <i className='fa-brands fa-linkedin fa-2x hover:scale-105 hover:text-blue-700'></i>
               </a>
-              <a href='#'>
+              <a href='mailto:ganeshbelote18@gmail.com?subject=Hello&body=Write your message here...'>
                 <i className='fa-solid fa-envelope fa-2x hover:scale-105 hover:text-red-700'></i>
               </a>
               <a href='https://www.instagram.com/dig_ganesh_0187/?hl=en'>

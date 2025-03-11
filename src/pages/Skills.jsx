@@ -26,7 +26,6 @@ const Skills = () => {
     }
   }, [])
 
-  console.log(transY, screenRef.current?.offsetHeight)
 
   return (
     <div

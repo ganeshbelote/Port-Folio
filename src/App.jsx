@@ -7,12 +7,9 @@ import Contact from './pages/Contact'
 import {SmoothScroll} from './utils/SmoothScroll.jsx'
 import Navbar from './components/Navbar.jsx'
 
-
-
 function App () {
   SmoothScroll()
   return (
-    // <SmoothScroll>
     <>
       <Navbar />
       <Hero />
@@ -21,8 +18,9 @@ function App () {
       <About />
       <Contact />
     </>
-    // </SmoothScroll>
   )
 }
 
 export default App
+
+//Done Responsive 🫡

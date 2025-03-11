@@ -32,7 +32,7 @@ const MyWork = () => {
           />
         </div>
       </div>
-      <div className='down h-3/5 lg:h-4/5 w-full flex items-center justify-center'>
+      <div className='down h-3/5 lg:h-4/5 w-full flex items-center justify-center' style={{marginTop:"30px"}}>
         <div
           className='container h-full lg:h-[80%] w-full flex items-center justify-center gap-3'
           style={{ padding: '0 30px' }}
@@ -53,7 +53,7 @@ const MyWork = () => {
             />
           </div>
           <div
-            className='Set w-full h-2/3 lg:h-full lg:w-1/2 flex items-center justify-center gap-5'
+            className='Set secondSet w-full h-2/3 lg:h-full lg:w-1/2 flex items-center justify-center gap-5'
             style={{ padding: '0 15px' }}
           >
             <img

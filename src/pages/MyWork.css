@@ -1,7 +1,4 @@
 @media (max-width : 541px){
-    #MyWork{
-        margin-bottom: -115px;
-    }
     .up{
         height: 20vh;
     }
@@ -10,6 +7,9 @@
             justify-content: start;
             flex-direction: column;
             gap: 0;
+            .secondSet{
+                margin-top: 20px;
+            }
         }
     }
 }
